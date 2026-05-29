@@ -1,0 +1,29 @@
+{
+  "name": "calendario-chile",
+  "api_version": "v1",
+  "dataset_version": "0.1.0-rc1",
+  "generated_for": "2026-05-29",
+  "coverage": {
+    "year_min": 1981,
+    "year_max": 2100,
+    "years": 120
+  },
+  "total_events": 33746,
+  "by_type": {
+    "local": 1080,
+    "commemorative": 18392,
+    "public": 8233,
+    "restricted": 30,
+    "bank": 6011
+  },
+  "license": "MIT",
+  "license_url": "https://opensource.org/license/mit",
+  "endpoints": {
+    "index": "v1/index.json",
+    "metadata": "v1/metadata.json",
+    "year": "v1/years/{YYYY}.json",
+    "today": "v1/hoy.json",
+    "upcoming": "v1/proximos.json"
+  },
+  "notes": "Dataset generado a partir de fuentes internas del proyecto. No constituye asesoría legal."
+}

@@ -1,0 +1,184 @@
+{
+  "name": "calendario-chile",
+  "title": "Calendario de Chile — Feriados, días bancarios, locales y conmemorativos (1981–2100)",
+  "description": "Dataset estructurado del calendario chileno generado a partir de fuentes internas del proyecto. Cobertura 1981–2100.",
+  "licenses": [
+    {
+      "name": "MIT",
+      "title": "MIT License",
+      "path": "https://opensource.org/license/mit"
+    }
+  ],
+  "version": "0.1.0-internal",
+  "sources": [
+    {
+      "title": "Fuentes internas del proyecto (procesadas)"
+    }
+  ],
+  "resources": [
+    {
+      "name": "holidays",
+      "path": "data/public/csv/calendar_chile_holidays.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "type": "string"
+          },
+          {
+            "name": "start_date",
+            "type": "string"
+          },
+          {
+            "name": "end_date",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "string"
+          },
+          {
+            "name": "weekday",
+            "type": "string"
+          },
+          {
+            "name": "name_es",
+            "type": "string"
+          },
+          {
+            "name": "name_en",
+            "type": "string"
+          },
+          {
+            "name": "slug",
+            "type": "string"
+          },
+          {
+            "name": "summary_original",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "name": "calendar_group",
+            "type": "string"
+          },
+          {
+            "name": "nationwide",
+            "type": "string"
+          },
+          {
+            "name": "subdivisions",
+            "type": "string"
+          },
+          {
+            "name": "regions",
+            "type": "string"
+          },
+          {
+            "name": "communes",
+            "type": "string"
+          },
+          {
+            "name": "location_raw",
+            "type": "string"
+          },
+          {
+            "name": "scope_text",
+            "type": "string"
+          },
+          {
+            "name": "is_public_holiday",
+            "type": "string"
+          },
+          {
+            "name": "is_bank_holiday",
+            "type": "string"
+          },
+          {
+            "name": "is_commemorative",
+            "type": "string"
+          },
+          {
+            "name": "is_local",
+            "type": "string"
+          },
+          {
+            "name": "is_school",
+            "type": "string"
+          },
+          {
+            "name": "is_religious",
+            "type": "string"
+          },
+          {
+            "name": "is_civic",
+            "type": "string"
+          },
+          {
+            "name": "is_irrenunciable",
+            "type": "string"
+          },
+          {
+            "name": "irrenunciability_category",
+            "type": "string"
+          },
+          {
+            "name": "irrenunciability_category_label",
+            "type": "string"
+          },
+          {
+            "name": "recurring",
+            "type": "string"
+          },
+          {
+            "name": "singular",
+            "type": "string"
+          },
+          {
+            "name": "movable",
+            "type": "string"
+          },
+          {
+            "name": "is_multiday",
+            "type": "string"
+          },
+          {
+            "name": "duration_days",
+            "type": "string"
+          },
+          {
+            "name": "legal_basis_count",
+            "type": "string"
+          },
+          {
+            "name": "legal_basis_summary",
+            "type": "string"
+          },
+          {
+            "name": "confidence",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "holidays-json",
+      "path": "data/public/json/calendar_chile_holidays.json",
+      "format": "json"
+    }
+  ]
+}

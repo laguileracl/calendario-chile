@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://calendario-chile/schema/calendar_chile_holiday.schema.json",
+  "title": "Calendario Chile — Feriado (público/bancario)",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "year",
+    "name",
+    "type",
+    "calendar_group"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1981,
+      "maximum": 2100
+    },
+    "weekday": {
+      "type": "string",
+      "enum": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ]
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "es": {
+          "type": "string"
+        },
+        "en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "slug": {
+      "type": "string"
+    },
+    "summary_original": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "public",
+        "bank",
+        "local",
+        "restricted"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "civic",
+        "cultural",
+        "educational",
+        "environmental",
+        "financial",
+        "health",
+        "labor",
+        "legal",
+        "other",
+        "religious"
+      ]
+    },
+    "calendar_group": {
+      "type": "string"
+    },
+    "nationwide": {
+      "type": "boolean"
+    },
+    "subdivisions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CL-[A-Z]{2}$"
+      }
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "communes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scope_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "is_public_holiday": {
+      "type": "boolean"
+    },
+    "is_bank_holiday": {
+      "type": "boolean"
+    },
+    "is_commemorative": {
+      "type": "boolean"
+    },
+    "is_local": {
+      "type": "boolean"
+    },
+    "is_school": {
+      "type": "boolean"
+    },
+    "is_religious": {
+      "type": "boolean"
+    },
+    "is_civic": {
+      "type": "boolean"
+    },
+    "is_irrenunciable": {
+      "type": "boolean"
+    },
+    "irrenunciability_category": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 5
+    },
+    "irrenunciability_category_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recurring": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "singular": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "movable": {
+      "type": "boolean"
+    },
+    "is_multiday": {
+      "type": "boolean"
+    },
+    "duration_days": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "legal_basis": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "definition": {
+      "type": "object"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    }
+  }
+}

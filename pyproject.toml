@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calendario-chile"
+version = "0.1.0"
+description = "Dataset estructurado del calendario chileno: feriados públicos, bancarios, locales y conmemorativos (1981–2100), con fundamento legal y alcance territorial."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["chile", "feriados", "holidays", "calendar", "open-data", "ical", "iso-3166-2"]
+authors = [{ name = "calendario-chile" }]
+dependencies = ["pandas>=2.0", "pyarrow>=12.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Documentation = "docs/index.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

@@ -1,0 +1,11 @@
+# Normalización de fin de línea
+* text=auto eol=lf
+*.ics text eol=crlf
+
+# Tratar artefactos de datos grandes como binarios para diffs limpios
+*.parquet binary
+*.sqlite binary
+
+# Marcar datos generados (para estadísticas de lenguaje en repos)
+data/** linguist-generated=true
+data/api/** linguist-generated=true

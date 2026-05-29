@@ -1,0 +1,51 @@
+# =====================================================================
+# Repo público liviano. El dataset COMPLETO no se versiona: se regenera
+# con el pipeline o se descarga desde GitHub Releases (ver docs/downloads.md).
+# =====================================================================
+
+# Material interno — NUNCA debe entrar al repo público
+data/internal/
+**/raw/
+release_artifacts/
+release_candidates/
+**/OBSOLETE_LICENSE_DRAFT.md
+
+# Datasets completos pesados (regenerables / Release) — no versionar
+data/public/json/
+data/public/csv/
+data/public/sqlite/
+data/public/parquet/
+# API por año: se ignoran todos y se exceptúan los 4 incluidos (más abajo)
+data/api/v1/years/*.json
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- SO ---
+.DS_Store
+
+# =====================================================================
+# SÍ se versionan (excepciones explícitas)
+# =====================================================================
+!data/public/SAMPLE.json
+!data/public/ics/
+!data/public/ics/*.ics
+!data/api/v1/index.json
+!data/api/v1/metadata.json
+!data/api/v1/hoy.json
+!data/api/v1/proximos.json
+!data/api/v1/years/2020.json
+!data/api/v1/years/2022.json
+!data/api/v1/years/2025.json
+!data/api/v1/years/2026.json
