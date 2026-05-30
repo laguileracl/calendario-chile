@@ -69,7 +69,7 @@ Hashes verificados localmente antes de subir: **6/6 OK** (`shasum -c SHA256SUMS.
 
 ## Problemas encontrados y resueltos
 
-- En preflight, `make clean-check` detectó **1 ruta absoluta local** (`/Users/...`) introducida en `NEXT_STEPS_GITHUB.md`. Se corrigió **antes** del primer push (commit `298d1a3`) y se re-apuntó el tag al snapshot limpio **estando aún sin publicar**. Tras ello, clean-check quedó limpio.
+- En preflight, `make clean-check` detectó **1 ruta absoluta local** (de tipo `/<usuario>/…`) introducida en `NEXT_STEPS_GITHUB.md`. Se corrigió **antes** del primer push (commit `298d1a3`) y se re-apuntó el tag al snapshot limpio **estando aún sin publicar**. Tras ello, clean-check quedó limpio.
 
 ## Integridad del tag
 
