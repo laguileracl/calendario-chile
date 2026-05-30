@@ -122,3 +122,13 @@ Experimento de recuperación de eventos `low-confidence` por **nombre normalizad
 3. Tratar `review_candidate` por lotes con revisión humana; `conflict` y `no_candidate` quedan para análisis caso a caso.
 
 > **Advertencia:** este experimento **no modificó ningún dato**. No se aplicaron overrides, no se cambió el `confidence` de ningún evento, no se alteraron datasets públicos ni canónicos.
+
+## Manual audit sample
+
+A representative audit sample was generated in:
+- `reports/name_matching_manual_audit_sample.csv`
+- `reports/NAME_MATCHING_MANUAL_AUDIT.md`
+
+No dataset changes were applied.
+
+Hallazgo de la auditoría: los 112 `auto_safe` se concentran en muy pocos nombres distintos (≈2 conmemorativos + 1 restringido), y no existen casos con score en [0.95, 0.97] (el matching es bimodal: exacto 1.0 o por debajo de 0.90). Esto hace que la revisión humana cubra casi todo el universo con pocas decisiones.
