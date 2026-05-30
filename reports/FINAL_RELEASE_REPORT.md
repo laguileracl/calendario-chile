@@ -15,7 +15,7 @@ Promoción de `calendario-chile` a versión **final `v0.1.0`** (release no-prere
 
 ## Commit y tags
 
-- **Commit del release final:** `<COMMIT_FINAL>` (commit "Prepare final v0.1.0 release").
+- **Commit del release final:** `9ade4ed (9ade4ed46251aef3668599669d63ead06a077c34)` (commit "Prepare final v0.1.0 release").
 - **Tag `v0.1.0`** → apunta al commit final.
 - **Tag `v0.1.0-rc1.2`** → `298d1a3` (intacto, sin mover).
 
@@ -42,7 +42,7 @@ Preparados en `release_artifacts/v0.1.0-final/`, contenido idéntico al RC (mism
 | `ARTIFACT_MANIFEST.md` |
 
 - **Hashes:** `shasum -a 256 -c SHA256SUMS.txt` → 6/6 OK (local).
-- **Verificación post-subida (descarga desde GitHub):** `<ASSET_VERIFY>`.
+- **Verificación post-subida (descarga desde GitHub):** `6/6 OK (descargados desde GitHub Release v0.1.0)`.
 
 ## Pages
 
@@ -64,5 +64,5 @@ Preparados en `release_artifacts/v0.1.0-final/`, contenido idéntico al RC (mism
 
 ## Estado del release final (se completa tras crear tag y release)
 
-- Release `v0.1.0` visible y **no-prerelease:** `<RELEASE_STATE>`.
-- Assets adjuntos: `<ASSETS>`.
+- Release `v0.1.0` visible y **no-prerelease:** `visible, prerelease=false, latest del repo`.
+- Assets adjuntos: `8 (6 ZIP + SHA256SUMS.txt + ARTIFACT_MANIFEST.md)`.
