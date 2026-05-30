@@ -15,10 +15,10 @@ git push origin v0.1.0-rc1.2
 
 ## 2. Crear la GitHub Release `v0.1.0`
 
-Los artefactos completos están en `release_artifacts/v0.1.0/` (fuera de este repo).
+Los artefactos completos están en `release_artifacts/v0.1.0/` (carpeta hermana del proyecto, fuera de este repo). Reemplaza `<ruta-artefactos>` por su ubicación local.
 
 ```bash
-cd /Users/laa/Projects/tools/calendario-chile-next/release_artifacts/v0.1.0
+cd <ruta-artefactos>/release_artifacts/v0.1.0
 
 # verificar integridad antes de subir
 shasum -c SHA256SUMS.txt
