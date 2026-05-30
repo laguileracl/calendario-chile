@@ -86,3 +86,13 @@ Muestreo determinista (seed fija) con diversidad por nombre y por año:
 Se completará tras la revisión humana (campo `reviewer_decision`). Dado que los auto_safe son coincidencias **exactas de nombre** y mismo tipo (conmemorativo↔conmemorativo), se espera **precisión alta**, pero debe confirmarse manualmente sobre la muestra antes de cualquier aplicación.
 
 > **Advertencia:** este documento es solo una muestra para revisión. **No se modificó ningún dato, ni `confidence`, ni se aplicaron overrides.**
+
+## Family-level review
+
+The candidate set was further grouped by normalized name family. See:
+- `reports/name_matching_families.csv`
+- `reports/NAME_MATCHING_FAMILY_REVIEW.md`
+
+No dataset changes were applied.
+
+Resultado: los 200 candidatos (112 auto_safe + 88 review) se reducen a **5 familias**: 2 `accept_family` (auto_safe conmemorativas exactas), 2 `review_family` y 1 `defer_to_issue_3` (escolares restringidos). Nota de calidad: la mayor familia `review` (Día Mundial de los Océanos → Refugiados, score 0.899) es un **match espurio** por palabras genéricas compartidas, lo que confirma no auto-aplicar los `review_candidate`.
