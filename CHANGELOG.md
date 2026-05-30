@@ -2,6 +2,27 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/) y versionado semántico.
 
+## [0.1.0] - 2026-05-29
+
+### Added
+- First stable public release of `calendario-chile`.
+- MIT-licensed open dataset for Chilean public holidays, bank holidays, local events and legal calendar data.
+- Static API metadata and selected year endpoints.
+- iCalendar files.
+- Downloadable release artifacts in JSON, CSV, SQLite, Parquet, ICS and full static API ZIP formats.
+- JSON Schema and Frictionless Data Package metadata.
+
+### Validation
+- Public validation passed.
+- Public tests passed.
+- Public clean-check passed.
+- GitHub Actions green.
+- Release artifacts verified with SHA-256.
+
+### Notes
+- This release promotes `v0.1.0-rc1.2` to `v0.1.0`.
+- The 665 low-confidence records and 29 restricted school-related events remain documented limitations for future review.
+
 ## [0.1.0-rc1.2] - 2026-05-29
 
 ### Fixed

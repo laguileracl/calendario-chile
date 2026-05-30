@@ -1,5 +1,7 @@
 # PUBLICATION_REPORT
 
+> **Actualización (2026-05-30):** el proyecto fue promovido a la versión final **`v0.1.0`** (release no-prerelease). Este documento describe la publicación del **release candidate** `v0.1.0-rc1.2`, que se mantiene como prerelease. Ver `reports/FINAL_RELEASE_REPORT.md`.
+
 Reporte de la publicación controlada de `calendario-chile` como **release candidate público** (no versión final).
 
 ## Datos de publicación
